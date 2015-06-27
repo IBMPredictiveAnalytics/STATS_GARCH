@@ -1,0 +1,496 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: STATS_GARCH.R:226
+msgid "GARCH"
+msgstr ""
+"GARCH"
+
+#: STATS_GARCH.R:227
+msgid "GARCH: Warnings"
+msgstr ""
+"GARCH: 경고"
+
+#: STATS_GARCH.R:232
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"R %s 패키지가 필요하지만 로드할 수 없습니다."
+
+#: STATS_GARCH.R:240
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"이 프로시저를 사용하려면 활성 데이터 세트의 이름이 있어야 합니다."
+
+#: STATS_GARCH.R:244
+msgid "The output dataset names must not already be in use"
+msgstr ""
+"출력 데이터 세트 이름은 아직 사용 중이지 않은 것이어야 합니다."
+
+#: STATS_GARCH.R:249
+msgid "Forecasts were requested but no forecast dataset name was specified"
+msgstr ""
+"예측값이 요청되었지만 지정된 예측값 데이터 세트 이름이 없습니다. "
+
+#: STATS_GARCH.R:252
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"파일이 모형 소스로 지정되었지만 제공된 이름이 없습니다. "
+
+#: STATS_GARCH.R:255
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"모형 소스가 작업공간으로 제공되었지만 입력 모형 파일이 지정되었습니다."
+
+#: STATS_GARCH.R:259
+msgid "A submodel was specified fo a model that does not support submodels"
+msgstr ""
+"하위 모형을 지원하지 않는 모형에 하위 모형이 지정되었습니다. "
+
+#: STATS_GARCH.R:263
+msgid "Model estimation was specified, but no variable was specified"
+msgstr ""
+"모형 추정이 지정되었으나 변수가 지정되지 않았습니다."
+
+#: STATS_GARCH.R:267
+msgid "The ARMA order for the variance and mean must specify two values"
+msgstr ""
+"분산 및 평균에 대한 ARMA 순서가 두 개의 값을 지정해야 합니다. "
+
+#: STATS_GARCH.R:271
+msgid "The dataset of residuals and fitted values cannot be requested except when estimating"
+msgstr ""
+"잔차 및 적합값의 데이터 세트는 추정 시를 제외하고 요청될 수 없습니다. "
+
+#: STATS_GARCH.R:295
+msgid "The workspace does not contain a GARCH model"
+msgstr ""
+"작업공간이 GARCH 모형을 포함하지 않습니다. "
+
+#: STATS_GARCH.R:311
+msgid "The start time must have one or two values"
+msgstr ""
+"시작 시간은 하나 또는 두 개의 값을 가져야 합니다. "
+
+#: STATS_GARCH.R:322
+msgid "Dataset too small.  At least 100 cases are required"
+msgstr ""
+"데이터 세트가 너무 작습니다. 최소한 100개의 케이스가 필요합니다."
+
+#: STATS_GARCH.R:366
+msgid "The roll value must be less than or equal to the holdout value"
+msgstr ""
+"롤 값은 검증값보다 작거나 같아야 합니다. "
+
+#: STATS_GARCH.R:383
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"명령이 모형을 추정하지 않으므로 작업공간 저장 요청을 무시합니다. "
+
+#: STATS_GARCH.R:419
+msgid "Variable"
+msgstr ""
+"변수"
+
+#: STATS_GARCH.R:420
+msgid "Model Source"
+msgstr ""
+"모형 소스"
+
+#: STATS_GARCH.R:421
+msgid "GARCH Model"
+msgstr ""
+"GARCH 모형"
+
+#: STATS_GARCH.R:422
+msgid "Variance External Regressors"
+msgstr ""
+"분산 외부 회귀변수"
+
+#: STATS_GARCH.R:423
+msgid "Mean Model Arma Order"
+msgstr ""
+"평균 모형 Arma 순서"
+
+#: STATS_GARCH.R:424
+msgid "Submodel"
+msgstr ""
+"하위 모형"
+
+#: STATS_GARCH.R:425
+msgid "Mean External Regressors"
+msgstr ""
+"평균 외부 회귀변수"
+
+#: STATS_GARCH.R:426
+msgid "Distribution"
+msgstr ""
+"분포"
+
+#: STATS_GARCH.R:427
+msgid "Variance Targeting"
+msgstr ""
+"분산 목표"
+
+#: STATS_GARCH.R:428
+msgid "Holdout Cases"
+msgstr ""
+"검증용 케이스"
+
+#: STATS_GARCH.R:429
+msgid "Solver"
+msgstr ""
+"해결기"
+
+#: STATS_GARCH.R:430
+msgid "Convergence"
+msgstr ""
+"수렴"
+
+#: STATS_GARCH.R:431
+msgid "Log Likelihood"
+msgstr ""
+"로그 우도"
+
+#: STATS_GARCH.R:432
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_GARCH.R:433
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_GARCH.R:434
+msgid "Shibata"
+msgstr ""
+"Shibata"
+
+#: STATS_GARCH.R:435
+msgid "Hannan-Quinn"
+msgstr ""
+"Hannan-Quinn"
+
+#: STATS_GARCH.R:436
+msgid "Forecast Dataset"
+msgstr ""
+"예측값 데이터 세트"
+
+#: STATS_GARCH.R:437
+msgid "Residual Dataset"
+msgstr ""
+"잔차 데이터 세트"
+
+#: STATS_GARCH.R:438
+msgid "Workspace Action"
+msgstr ""
+"작업공간 동작"
+
+#: STATS_GARCH.R:439
+msgid "Saved Workspace"
+msgstr ""
+"저장된 작업공간"
+
+#: STATS_GARCH.R:440
+msgid "Random Number Seed"
+msgstr ""
+"난수 시작값"
+
+#: STATS_GARCH.R:441
+msgid "Estimation Date"
+msgstr ""
+"추정 날짜"
+
+#: STATS_GARCH.R:451
+#: STATS_GARCH.R:455
+#: STATS_GARCH.R:456
+#: STATS_GARCH.R:465
+#: STATS_GARCH.R:466
+#: STATS_GARCH.R:468
+#: STATS_GARCH.R:469
+msgid "--NA--"
+msgstr ""
+"--해당 없음--"
+
+#: STATS_GARCH.R:459
+#: STATS_GARCH.R:462
+msgid "Yes"
+msgstr ""
+"예"
+
+#: STATS_GARCH.R:459
+msgid "No"
+msgstr ""
+"아니오"
+
+#: STATS_GARCH.R:462
+msgid "NO"
+msgstr ""
+"아니오"
+
+#: STATS_GARCH.R:475
+msgid "Values"
+msgstr ""
+"값"
+
+#: STATS_GARCH.R:477
+msgid "GARCH Summary"
+msgstr ""
+"GARCH 요약"
+
+#: STATS_GARCH.R:479
+msgid "Results computed by R rugarch package"
+msgstr ""
+"R rugarch 패키지에 의해 계산된 결과"
+
+#: STATS_GARCH.R:499
+msgid "AR"
+msgstr ""
+"AR"
+
+#: STATS_GARCH.R:500
+msgid "MA"
+msgstr ""
+"MA"
+
+#: STATS_GARCH.R:501
+msgid "Mean"
+msgstr ""
+"평균"
+
+#: STATS_GARCH.R:502
+msgid "Archm"
+msgstr ""
+"Archm"
+
+#: STATS_GARCH.R:503
+msgid "Arfima"
+msgstr ""
+"Arfima"
+
+#: STATS_GARCH.R:504
+#: STATS_GARCH.R:508
+msgid "External Regressor"
+msgstr ""
+"외부 회귀변수"
+
+#: STATS_GARCH.R:505
+msgid "ARCH(q)"
+msgstr ""
+"ARCH(q)"
+
+#: STATS_GARCH.R:506
+msgid "GARCH(p)"
+msgstr ""
+"GARCH(p)"
+
+#: STATS_GARCH.R:507
+msgid "Variance Intercept"
+msgstr ""
+"분산 절편"
+
+#: STATS_GARCH.R:509
+msgid "Leverage"
+msgstr ""
+"레버리지"
+
+#: STATS_GARCH.R:513
+msgid "Parameter Definition"
+msgstr ""
+"모수 정의"
+
+#: STATS_GARCH.R:515
+msgid "Output Notation"
+msgstr ""
+"출력 표기"
+
+#: STATS_GARCH.R:516
+msgid "Term"
+msgstr ""
+"항"
+
+#: STATS_GARCH.R:523
+msgid "Estimate"
+msgstr ""
+"추정값"
+
+#: STATS_GARCH.R:523
+msgid "Std. Error"
+msgstr ""
+"표준오차"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:561
+msgid "t"
+msgstr ""
+"t"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:561
+msgid "Sig."
+msgstr ""
+"TPL 유의확률"
+
+#: STATS_GARCH.R:524
+msgid "Robust Std. Error"
+msgstr ""
+"로버스트 표준편차 오류"
+
+#: STATS_GARCH.R:524
+msgid "Robust t"
+msgstr ""
+"로버스트 T"
+
+#: STATS_GARCH.R:524
+msgid "Robust Sig."
+msgstr ""
+"로버스트 유의확률"
+
+#: STATS_GARCH.R:525
+msgid "Coefficients"
+msgstr ""
+"계수"
+
+#: STATS_GARCH.R:530
+msgid "Bin Size"
+msgstr ""
+"구간 크기"
+
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:538
+#: STATS_GARCH.R:571
+msgid "Statistic"
+msgstr ""
+"통계량"
+
+#: STATS_GARCH.R:531
+msgid "Goodness of Fit Tests"
+msgstr ""
+"적합도 검정"
+
+#: STATS_GARCH.R:537
+msgid "Joint"
+msgstr ""
+"결합"
+
+#: STATS_GARCH.R:541
+msgid "Individual Critical Values:"
+msgstr ""
+"개별 임계값:"
+
+#: STATS_GARCH.R:543
+msgid "Joint Critical Values:"
+msgstr ""
+"결합 임계값:"
+
+#: STATS_GARCH.R:546
+msgid "Hansen-Nyblom Stability Test"
+msgstr ""
+"Hansen-Nyblom 안정성 검정"
+
+#: STATS_GARCH.R:555
+msgid "Sign Bias"
+msgstr ""
+"부호 편향"
+
+#: STATS_GARCH.R:556
+msgid "Negative Sign Bias"
+msgstr ""
+"음 부호 편향"
+
+#: STATS_GARCH.R:557
+msgid "Positive Sign Bias"
+msgstr ""
+"양 부호 편향"
+
+#: STATS_GARCH.R:558
+msgid "Joint Effect"
+msgstr ""
+"결합 효과"
+
+#: STATS_GARCH.R:562
+msgid "Engle-Ng Sign Bias Test"
+msgstr ""
+"Engle-Ng 부호 편향 검정"
+
+#: STATS_GARCH.R:572
+msgid "Long Run Unconditional Variance"
+msgstr ""
+"장기간 실행 비조건부 분산"
+
+#: STATS_GARCH.R:573
+msgid "Unconditional Mean of Conditional Mean Equation"
+msgstr ""
+"조건부 평균 방정식의 비조건부 평균"
+
+#: STATS_GARCH.R:574
+msgid "Model Persistence"
+msgstr ""
+"모형 지속성"
+
+#: STATS_GARCH.R:575
+msgid "Halflife of Fit Variance"
+msgstr ""
+"적합값 분산의 반감기"
+
+#: STATS_GARCH.R:577
+msgid "Other Statistics"
+msgstr ""
+"기타 통계량"
+
+#: STATS_GARCH.R:636
+#: STATS_GARCH.R:653
+msgid "Time"
+msgstr ""
+"시간"
+
+#: STATS_GARCH.R:640
+msgid "Residuals"
+msgstr ""
+"잔차"
+
+#: STATS_GARCH.R:641
+msgid "Fitted Values"
+msgstr ""
+"적합값"
+
+#: STATS_GARCH.R:657
+msgid "Forecast, roll="
+msgstr ""
+"예측값, 롤="
+
+#: STATS_GARCH.R:659
+msgid "Sigma, roll="
+msgstr ""
+"시그마, 롤="
+
+#: STATS_GARCH.R:698
+msgid "End of procedure"
+msgstr ""
+"프로시저 끝"
+
+#: STATS_GARCH.R:725
+msgid "Message Number"
+msgstr ""
+"메시지 번호"
+
+
