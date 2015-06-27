@@ -1,0 +1,16 @@
+Name: STATS GARCH
+Dialog-Specs: STATS_GARCH.spd
+Command-Specs: STATS_GARCH.xml
+Code-Files: STATS_GARCH.R
+Misc-Files: markdown.html,extsyntax.css,IBMdialogicon.png
+Summary: GARCH models
+Description: This procedure calculates a variety of univariate GARCH m
+ odels.  The models can be used for forecasting.
+Author: JKP, IBM SPSS
+Version: 1.0.3
+Product-Version: 18
+Date: 6/25/14
+Categories: time series, GARCH, statistics
+Plugins: R
+R-Packages: rugarch
+Translation-Catalogues: lang
