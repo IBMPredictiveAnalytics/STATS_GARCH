@@ -1,0 +1,496 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: STATS_GARCH.R:226
+msgid "GARCH"
+msgstr ""
+"GARCH"
+
+#: STATS_GARCH.R:227
+msgid "GARCH: Warnings"
+msgstr ""
+"GARCH: Предупреждения"
+
+#: STATS_GARCH.R:232
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"Необходим пакет R %s, но его не удалось загрузить."
+
+#: STATS_GARCH.R:240
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"Для использования этой процедуры у активного набора данных должно быть имя"
+
+#: STATS_GARCH.R:244
+msgid "The output dataset names must not already be in use"
+msgstr ""
+"Имена выходных наборов данных не могут уже использоваться"
+
+#: STATS_GARCH.R:249
+msgid "Forecasts were requested but no forecast dataset name was specified"
+msgstr ""
+"Были затребованы прогнозы, но имя набора данных прогнозов не задано"
+
+#: STATS_GARCH.R:252
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"Как источник модели был указан файл, но не дано имя"
+
+#: STATS_GARCH.R:255
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"Источником модели было взято рабочее пространство, но не задан входной файл модели"
+
+#: STATS_GARCH.R:259
+msgid "A submodel was specified fo a model that does not support submodels"
+msgstr ""
+"Была задана подмодель для модели, которая не поддерживает подмодели"
+
+#: STATS_GARCH.R:263
+msgid "Model estimation was specified, but no variable was specified"
+msgstr ""
+"Была задана оценка модели, но не указаны переменные"
+
+#: STATS_GARCH.R:267
+msgid "The ARMA order for the variance and mean must specify two values"
+msgstr ""
+"При использовании ARMA для дисперсии и среднего нужно задать два значения"
+
+#: STATS_GARCH.R:271
+msgid "The dataset of residuals and fitted values cannot be requested except when estimating"
+msgstr ""
+"Набор данных остатков и скорректированных значений нельзя требовать в иных ситуациях, кроме оценки"
+
+#: STATS_GARCH.R:295
+msgid "The workspace does not contain a GARCH model"
+msgstr ""
+"Рабочее пространство не содержит модель GARCH"
+
+#: STATS_GARCH.R:311
+msgid "The start time must have one or two values"
+msgstr ""
+"У начального времени должно быть одно или два значения"
+
+#: STATS_GARCH.R:322
+msgid "Dataset too small.  At least 100 cases are required"
+msgstr ""
+"Набор данных слишком мал. Требуется не менее 100 наблюдений"
+
+#: STATS_GARCH.R:366
+msgid "The roll value must be less than or equal to the holdout value"
+msgstr ""
+"Значение скользящего смещения должно быть не больше контрольного значения"
+
+#: STATS_GARCH.R:383
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"Требование сохранения рабочего пространства игнорируется, так как команда не оценивает модель"
+
+#: STATS_GARCH.R:419
+msgid "Variable"
+msgstr ""
+"Переменная"
+
+#: STATS_GARCH.R:420
+msgid "Model Source"
+msgstr ""
+"Источник модели"
+
+#: STATS_GARCH.R:421
+msgid "GARCH Model"
+msgstr ""
+"Модель GARCH"
+
+#: STATS_GARCH.R:422
+msgid "Variance External Regressors"
+msgstr ""
+"Внешние регрессоры дисперсии"
+
+#: STATS_GARCH.R:423
+msgid "Mean Model Arma Order"
+msgstr ""
+"Порядок Arma модели среднего"
+
+#: STATS_GARCH.R:424
+msgid "Submodel"
+msgstr ""
+"Подмодель"
+
+#: STATS_GARCH.R:425
+msgid "Mean External Regressors"
+msgstr ""
+"Внешние регрессоры среднего"
+
+#: STATS_GARCH.R:426
+msgid "Distribution"
+msgstr ""
+"Распределение"
+
+#: STATS_GARCH.R:427
+msgid "Variance Targeting"
+msgstr ""
+"Позиционирование дисперсии"
+
+#: STATS_GARCH.R:428
+msgid "Holdout Cases"
+msgstr ""
+"Контрольные наблюдения"
+
+#: STATS_GARCH.R:429
+msgid "Solver"
+msgstr ""
+"Решающая программа"
+
+#: STATS_GARCH.R:430
+msgid "Convergence"
+msgstr ""
+"Сходимость"
+
+#: STATS_GARCH.R:431
+msgid "Log Likelihood"
+msgstr ""
+"Логарифмическое правдоподобие"
+
+#: STATS_GARCH.R:432
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_GARCH.R:433
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_GARCH.R:434
+msgid "Shibata"
+msgstr ""
+"Сибата"
+
+#: STATS_GARCH.R:435
+msgid "Hannan-Quinn"
+msgstr ""
+"Ханнан-Куинн"
+
+#: STATS_GARCH.R:436
+msgid "Forecast Dataset"
+msgstr ""
+"Набор данных прогнозов"
+
+#: STATS_GARCH.R:437
+msgid "Residual Dataset"
+msgstr ""
+"Набор данных остатков"
+
+#: STATS_GARCH.R:438
+msgid "Workspace Action"
+msgstr ""
+"Действие в рабочем пространстве"
+
+#: STATS_GARCH.R:439
+msgid "Saved Workspace"
+msgstr ""
+"Сохраненное рабочее пространство"
+
+#: STATS_GARCH.R:440
+msgid "Random Number Seed"
+msgstr ""
+"Начальное значение генератора случайных чисел"
+
+#: STATS_GARCH.R:441
+msgid "Estimation Date"
+msgstr ""
+"Дата оценки"
+
+#: STATS_GARCH.R:451
+#: STATS_GARCH.R:455
+#: STATS_GARCH.R:456
+#: STATS_GARCH.R:465
+#: STATS_GARCH.R:466
+#: STATS_GARCH.R:468
+#: STATS_GARCH.R:469
+msgid "--NA--"
+msgstr ""
+"--НП--"
+
+#: STATS_GARCH.R:459
+#: STATS_GARCH.R:462
+msgid "Yes"
+msgstr ""
+"Да"
+
+#: STATS_GARCH.R:459
+msgid "No"
+msgstr ""
+"Нет"
+
+#: STATS_GARCH.R:462
+msgid "NO"
+msgstr ""
+"НЕТ"
+
+#: STATS_GARCH.R:475
+msgid "Values"
+msgstr ""
+"Значения"
+
+#: STATS_GARCH.R:477
+msgid "GARCH Summary"
+msgstr ""
+"Сводка GARCH"
+
+#: STATS_GARCH.R:479
+msgid "Results computed by R rugarch package"
+msgstr ""
+"Результаты вычислены пакетом R rugarch"
+
+#: STATS_GARCH.R:499
+msgid "AR"
+msgstr ""
+"AR"
+
+#: STATS_GARCH.R:500
+msgid "MA"
+msgstr ""
+"СС"
+
+#: STATS_GARCH.R:501
+msgid "Mean"
+msgstr ""
+"Среднее"
+
+#: STATS_GARCH.R:502
+msgid "Archm"
+msgstr ""
+"Archm"
+
+#: STATS_GARCH.R:503
+msgid "Arfima"
+msgstr ""
+"Arfima"
+
+#: STATS_GARCH.R:504
+#: STATS_GARCH.R:508
+msgid "External Regressor"
+msgstr ""
+"Внешний регрессор"
+
+#: STATS_GARCH.R:505
+msgid "ARCH(q)"
+msgstr ""
+"ARCH(q)"
+
+#: STATS_GARCH.R:506
+msgid "GARCH(p)"
+msgstr ""
+"GARCH(p)"
+
+#: STATS_GARCH.R:507
+msgid "Variance Intercept"
+msgstr ""
+"Свободный член дисперсии"
+
+#: STATS_GARCH.R:509
+msgid "Leverage"
+msgstr ""
+"Балансировка"
+
+#: STATS_GARCH.R:513
+msgid "Parameter Definition"
+msgstr ""
+"Определение параметров"
+
+#: STATS_GARCH.R:515
+msgid "Output Notation"
+msgstr ""
+"Запись выходных данных"
+
+#: STATS_GARCH.R:516
+msgid "Term"
+msgstr ""
+"Член"
+
+#: STATS_GARCH.R:523
+msgid "Estimate"
+msgstr ""
+"Оценка"
+
+#: STATS_GARCH.R:523
+msgid "Std. Error"
+msgstr ""
+"Стд. ошибка"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:561
+msgid "t"
+msgstr ""
+"т"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:561
+msgid "Sig."
+msgstr ""
+"Значимость"
+
+#: STATS_GARCH.R:524
+msgid "Robust Std. Error"
+msgstr ""
+"Робастная среднекв. ошибка"
+
+#: STATS_GARCH.R:524
+msgid "Robust t"
+msgstr ""
+"Робастное t"
+
+#: STATS_GARCH.R:524
+msgid "Robust Sig."
+msgstr ""
+"Робастная знч."
+
+#: STATS_GARCH.R:525
+msgid "Coefficients"
+msgstr ""
+"Коэффициенты"
+
+#: STATS_GARCH.R:530
+msgid "Bin Size"
+msgstr ""
+"Количество сегментов"
+
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:538
+#: STATS_GARCH.R:571
+msgid "Statistic"
+msgstr ""
+"Статистика"
+
+#: STATS_GARCH.R:531
+msgid "Goodness of Fit Tests"
+msgstr ""
+"Критерии согласия"
+
+#: STATS_GARCH.R:537
+msgid "Joint"
+msgstr ""
+"Объединение"
+
+#: STATS_GARCH.R:541
+msgid "Individual Critical Values:"
+msgstr ""
+"Индивидуальные критические значения:"
+
+#: STATS_GARCH.R:543
+msgid "Joint Critical Values:"
+msgstr ""
+"Объединенные критические значения:"
+
+#: STATS_GARCH.R:546
+msgid "Hansen-Nyblom Stability Test"
+msgstr ""
+"Критерий стабильности Хансена-Ниблома"
+
+#: STATS_GARCH.R:555
+msgid "Sign Bias"
+msgstr ""
+"Знак отклонения"
+
+#: STATS_GARCH.R:556
+msgid "Negative Sign Bias"
+msgstr ""
+"Отрицательный знак отклонения"
+
+#: STATS_GARCH.R:557
+msgid "Positive Sign Bias"
+msgstr ""
+"Положительный знак отклонения"
+
+#: STATS_GARCH.R:558
+msgid "Joint Effect"
+msgstr ""
+"Эффект объединения"
+
+#: STATS_GARCH.R:562
+msgid "Engle-Ng Sign Bias Test"
+msgstr ""
+"Критерий смещения знака Ингла-Нг"
+
+#: STATS_GARCH.R:572
+msgid "Long Run Unconditional Variance"
+msgstr ""
+"Безусловная дисперсия длительного выполнения"
+
+#: STATS_GARCH.R:573
+msgid "Unconditional Mean of Conditional Mean Equation"
+msgstr ""
+"Безусловное среднее уравнения с условным средним"
+
+#: STATS_GARCH.R:574
+msgid "Model Persistence"
+msgstr ""
+"Постоянство модели"
+
+#: STATS_GARCH.R:575
+msgid "Halflife of Fit Variance"
+msgstr ""
+"Период полураспада дисперсии подгонки"
+
+#: STATS_GARCH.R:577
+msgid "Other Statistics"
+msgstr ""
+"Другая статистика"
+
+#: STATS_GARCH.R:636
+#: STATS_GARCH.R:653
+msgid "Time"
+msgstr ""
+"Время"
+
+#: STATS_GARCH.R:640
+msgid "Residuals"
+msgstr ""
+"Остатки"
+
+#: STATS_GARCH.R:641
+msgid "Fitted Values"
+msgstr ""
+"Подогнанные значения"
+
+#: STATS_GARCH.R:657
+msgid "Forecast, roll="
+msgstr ""
+"Прогноз, откат ="
+
+#: STATS_GARCH.R:659
+msgid "Sigma, roll="
+msgstr ""
+"Сигма, откат ="
+
+#: STATS_GARCH.R:698
+msgid "End of procedure"
+msgstr ""
+"Конец процедуры"
+
+#: STATS_GARCH.R:725
+msgid "Message Number"
+msgstr ""
+"Номер сообщения"
+
+
