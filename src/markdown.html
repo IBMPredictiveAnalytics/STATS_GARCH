@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS GARCH Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+
+
+
+
+</head>
+
+<body>
+<h1>STATS GARCH Extension Command</h1>
+
+<p>Estimate a GARCH time series model</p>
+
+<p>Note: For mathematical details of the models and methods
+used here, see
+<em>Introduction to the rugarch package.pdf</em>.
+This will be found under the R installation directory
+in library/rugarch/doc.</p>
+<div class="syntax">
+<p>STATS GARCH 
+VARIABLE=<em>varname</em>&#42; MODELSOURCE=ESTIMATE<sup>&#42;&#42;</sup> or FILE or WORKSPACE
+MODELFILE=&ldquo;<em>file specification</em>&rdquo;<br/>
+START=
+<em>number</em> <em>number</em> FREQUENCY=<em>frequency</em> if start has two numbers</p>
+
+<p>/FIT<br/>
+HOLDOUT=<em>number of holdout cases</em><br/>
+SOLVER=nlminb or solnp or lbfgs or gosolnp or nloptr or hybrid<br/>
+NRESTARTS=<em>number of restarts</em> PARALLEL=YES or NO<sup>&#42;&#42;</sup><br/>
+PACKAGE=snowfall or multicore<br/>
+NCORES=<em>number of cores to use</em><br/>
+NSIM=<em>number</em><br/>
+SEED=<em>random number seed</em>.</p>
+
+<p>/SPECIFICATION<br/>
+VARMODEL=SGARCH or FGARCH or EGARCH or GJRGARCH or APARCH
+  or IGARCH or CSGARCH<br/>
+VARGARCHORDER=<em>arorder maorder</em><br/>
+SUBMODEL=GARCH or TGARCH or AVGARCH or NGARCH or NAGARCH or APARCH
+or GJRGARCH or ALLGARCH<br/>
+VARREGRESSORS=<em>list of variables</em>
+VARTARGETING = YES or NO<sup>&#42;&#42;</sup><br/>
+MEANORDER= <em>arorder maorder</em><br/>
+INCLUDEMEAN=YES<sup>&#42;&#42;</sup> or NO<br/>
+MEANARCHPOW=STDDEV<sup>&#42;&#42;</sup> or VAR<br/>
+MEANARCHM=YES or NO  MEANARFIMA=YES or NO  MEANARCHEX=YES or NO<br/>
+MEANREGRESSORS=<em>list of variables</em><br/>
+DISTRIBUTION = NORM<sup>&#42;&#42;</sup> or SNORM or STDT or SSTD or GED or SGED or NORMINVG
+  or GHYP or JOHNSONSU</p>
+
+<p>/DISPLAY<br/>
+PLOTS=ALL or chosen from this list:<br/>
+  SERIES2SD, SERIESWVARLIMITS, CONDSD, OBSACF, SQACF, ABSACF, CROSSCORR,
+  RESIDDENSITY, RESQQ, RESACF, RES2ACF, NEWSIMPACT<br/>
+FORECASTPLOTS=ALL or chosen from this list:<br/>
+  TSUNCOND, TSROLLING, SIGMAUNCOND, SIGMAROLLING</p>
+
+<p>/SAVE<br/>
+RFDATASET=<em>new dataset name</em>  FDATASET=<em>new dataset name</em><br/>
+ID=<em>variable name</em><br/>
+FHORIZON=<em>number</em>  FROLL=<em>number</em>
+WORKSPACEACTION=RETAIN or CLEAR<br/>
+WORKSPACEOUTFILE=&ldquo;<em>file specification</em>&rdquo;  </p>
+
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default  </p>
+</div>
+<p>STATS GARCH /HELP prints this help and does nothing else.</p>
+
+<pre class="example"><code>STATS GARCH VARIABLE=y MODELSOURCE=ESTIMATE
+/FIT  HOLDOUT=10
+/SPECIFICATION VARMODEL=FGARCH VARGARCHORDER=2 0 SUBMODEL=TGARCH
+VARTARGETING=NO MEANORDER=1 1 INCLUDEMEAN=YES DISTRIBUTION=STDT
+/SAVE WORKSPACEACTION=RETAIN.
+</code></pre>
+
+<p>The only required specification is VARIABLE.</p>
+
+<p><strong>MODELSOURCE</strong><br/>
+STATS GARCH works in two modes.  If MODELSOURCE=ESTIMATE, the model is
+estimated.  If it is FILE or WORKSPACE, forecasts are produced from a
+previously estimated model.  With FILE, the saved model workspace is
+indicated with <strong>MODELFILE</strong>.  With WORKSPACE, the workspace must have
+been created in the current session and preserved with 
+WORKSPACEACTION=RETAIN.</p>
+
+<p>For saving a dataset, an <strong>ID</strong> variable can be specified or
+<strong>START</strong> and <strong>FREQUENCY</strong> parameters can be specified for inclusion of
+generated date values in the dataset.  </p>
+
+<p><strong>START</strong> has the form START=number or START=number number
+depending on the time structure.  With a subperiod, such as years and
+months, the second parameter indicates when within the major period
+the data start, numbering from 1.  <strong>FREQUENCY</strong> is the number of minor
+periods within the major period, 12 in this example.</p>
+
+<h2>FIT</h2>
+
+<p><strong>HOLDOUT</strong> specifies the number of cases at the end of the estimation data
+to be held out from estimation for use in forecast testing.<br/>
+The default is 0.</p>
+
+<p><strong>SEED</strong> sets the random number seed and can be used to ensure that
+the results can be reproduced.</p>
+
+<p><strong>SOLVER</strong> specifies which solver to use.</p>
+
+<p>The remaining parameters specify details of the numerical 
+solvers and apply to solver GOSOLNP.</p>
+
+<p><strong>NRESTARTS</strong> specifies the required number of solver restarts.
+The default is 1. </p>
+
+<p><strong>PARALLEL</strong> specifies parallel processing using
+<strong>NCORES</strong> number of CPUs.</p>
+
+<p><strong>PKG</strong> specifies the multiprocessing package.</p>
+
+<p><strong>NSIM</strong> specifies the number of simulated parameter vectors 
+to generate for <strong>NRESTARTS</strong> restarts.</p>
+
+<p>The HYBRID solver tries several different solvers until 
+convergence is achieved.</p>
+
+<h2>SPECIFICATION</h2>
+
+<p>This subcommand handles the details of the model.
+<strong>VARMODEL</strong> specifies the variance model.  The model types are</p>
+
+<ul>
+<li><strong>SGARCH</strong>: standard GARCH</li>
+<li><strong>IGARCH</strong>: integrated GARCH</li>
+<li><strong>EGARCH</strong>: exponential GARCH</li>
+<li><strong>GJRGARCH</strong>: asymmetric positive and negative shocks</li>
+<li><strong>APARCH</strong>: asymmetric power ARCH</li>
+<li><strong>FGARCH</strong>: family or omnibus GARCH</li>
+<li><strong>csGARCH</strong>: standard GARCH decomposed into permanent and 
+transitory components.</li>
+</ul>
+
+<p>If VARMODEL=FGARCH, a submodel can be specified in <strong>SUBMODEL</strong> with the
+choices as listed above.</p>
+
+<p><strong>VARGARCHORDER</strong> specifies the ar and ma orders of the variance model.</p>
+
+<p><strong>VARREGRESSORS</strong> specifies additional variables for the variance model.</p>
+
+<p><strong>VARTARGETING</strong> specifies variance targeting for the
+conditional variance intercept.</p>
+
+<p><strong>MEANORDER</strong> specifies the ar and ma orders for the mean model.</p>
+
+<p><strong>INCLUDEMEAN</strong> specifies whether or not to include the mean.</p>
+
+<p><strong>MEANARCHPOW</strong> specifies standard deviation or variance for
+the ARCH in the mean regression.</p>
+
+<p><strong>MEANARFIMA</strong> specifies fractional differencing.</p>
+
+<p><strong>MEANARCHM</strong> specifies ARCH volatility inclusion in the 
+mean regression.</p>
+
+<p><strong>MEANREGRESSORS</strong> lists the variables to be included in the
+mean regression.</p>
+
+<p><strong>MEANARCHEX</strong> specifies whether to multiply the external
+regressors by the conditional standard deviation.</p>
+
+<p><strong>DISTRIBUTION</strong> specifies the conditional distribution
+to use for innovations.  The choices are</p>
+
+<ul>
+<li><strong>NORM</strong>: normal</li>
+<li><strong>SNORM</strong>: skew-normal</li>
+<li><strong>STDT</strong>: Student t</li>
+<li><strong>SSTD</strong>: skew Student t</li>
+<li><strong>GED</strong>: generalized error</li>
+<li><strong>SGED</strong>: for skew generalized error</li>
+<li><strong>NORMINVG</strong>: normal inverse gaussian</li>
+<li><strong>GHYP</strong>: generalized hyperbolic</li>
+<li><strong>JOHNSONSU</strong>: Johnsons SU</li>
+</ul>
+
+<h2>DISPLAY</h2>
+
+<p>This subcommand specifies which estimation-time and forecast-time
+plots to produce.  Choose as many as desired.  The
+names are reasonably descriptive, but actually seeing
+the plots should resolve any uncertainty.</p>
+
+<p>For forecast-time plots (<strong>FORECASTPLOTS</strong>) some plots will not
+appear unless FROLL &gt; 0.</p>
+
+<h2>SAVE</h2>
+
+<p>This subcommand specifies the datasets and files to be created.</p>
+
+<p><strong>RFDATASET</strong> specifies a dataset of residuals and fitted values.</p>
+
+<p><strong>FDATASET</strong> specifies a dataset of forecast (out of sample) values.</p>
+
+<p>Dataset names must not already be in use.</p>
+
+<p><strong>ID</strong> specifies an ID variable to be included in the RFDATASET.
+For forecasts, the cases are labelled as &ldquo;T+1&rdquo;, &ldquo;T+2&rdquo;, &hellip;</p>
+
+<p><strong>FHORIZON</strong> specifies how far into the future to forecast.  The
+default is 0.</p>
+
+<p><strong>FROLL</strong> specifies rolling, i.e., one step ahead forecasts
+based on the prior cases.  The default is 0, which means
+static FHORIZON forecasts.  FROLL must be &lt;= HOLDOUT.</p>
+
+<p><strong>WORKSPACEACTION</strong> specifies whether the workspace containing
+the model is retained or cleared.  If retained, it can be
+used for forecasting in the current session without loading 
+the model from a file.</p>
+
+<p><strong>WORKSPACEOUTFILE</strong> specifies a file where the model is saved
+for future use in forecasting with MODELSOURCE=FILE.</p>
+
+<p>This extension command is implemented via the R rugarch
+package by Alexios Ghalanos.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+
