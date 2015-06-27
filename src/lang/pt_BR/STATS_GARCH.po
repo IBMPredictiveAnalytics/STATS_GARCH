@@ -1,0 +1,496 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: STATS_GARCH.R:226
+msgid "GARCH"
+msgstr ""
+"GARCH"
+
+#: STATS_GARCH.R:227
+msgid "GARCH: Warnings"
+msgstr ""
+"GARCH: Avisos"
+
+#: STATS_GARCH.R:232
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"O pacote R %s é necessário, mas não pôde ser carregado."
+
+#: STATS_GARCH.R:240
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"O conjunto de dados ativo deve ter um nome para utilizar este procedimento"
+
+#: STATS_GARCH.R:244
+msgid "The output dataset names must not already be in use"
+msgstr ""
+"Os nomes de conjuntos de dados de saída não devem já estar em uso"
+
+#: STATS_GARCH.R:249
+msgid "Forecasts were requested but no forecast dataset name was specified"
+msgstr ""
+"As previsões foram solicitadas, mas nenhum nome do conjunto de dados de previsão foi especificado"
+
+#: STATS_GARCH.R:252
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"Um arquivo foi especificado como a origem do modelo, mas nenhum nome foi fornecido"
+
+#: STATS_GARCH.R:255
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"A origem do modelo foi fornecida como área de trabalho, mas um arquivo de modelo de entrada foi especificado"
+
+#: STATS_GARCH.R:259
+msgid "A submodel was specified fo a model that does not support submodels"
+msgstr ""
+"Um submodelo foi especificado para um modelo que não suporta submodelos"
+
+#: STATS_GARCH.R:263
+msgid "Model estimation was specified, but no variable was specified"
+msgstr ""
+"A estimativa de modelo foi especificada, mas nenhuma variável foi especificada"
+
+#: STATS_GARCH.R:267
+msgid "The ARMA order for the variance and mean must specify two values"
+msgstr ""
+"A ordem ARMA para a variação e a média devem especificar dois valores"
+
+#: STATS_GARCH.R:271
+msgid "The dataset of residuals and fitted values cannot be requested except when estimating"
+msgstr ""
+"O conjunto de dados de resíduos e valores ajustados não podem ser solicitados, exceto quando de estimativa"
+
+#: STATS_GARCH.R:295
+msgid "The workspace does not contain a GARCH model"
+msgstr ""
+"A área de trabalho não contém um modelo GARCH"
+
+#: STATS_GARCH.R:311
+msgid "The start time must have one or two values"
+msgstr ""
+"O horário de início deve ter um ou dois valores"
+
+#: STATS_GARCH.R:322
+msgid "Dataset too small.  At least 100 cases are required"
+msgstr ""
+"Conjunto de dados muito pequeno. Pelo menos 100 casos são necessários "
+
+#: STATS_GARCH.R:366
+msgid "The roll value must be less than or equal to the holdout value"
+msgstr ""
+"O valor do rolo deve ser inferior ou igual ao valor de validação"
+
+#: STATS_GARCH.R:383
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"Ignorando a solicitação de salvamento da área de trabalho porque o comando não está estimando o modelo"
+
+#: STATS_GARCH.R:419
+msgid "Variable"
+msgstr ""
+"Variável"
+
+#: STATS_GARCH.R:420
+msgid "Model Source"
+msgstr ""
+"Origem de modelo"
+
+#: STATS_GARCH.R:421
+msgid "GARCH Model"
+msgstr ""
+"Modelo GARCH"
+
+#: STATS_GARCH.R:422
+msgid "Variance External Regressors"
+msgstr ""
+"Regressores de Variância Externa"
+
+#: STATS_GARCH.R:423
+msgid "Mean Model Arma Order"
+msgstr ""
+"Ordem de Arma de Modelo de Média"
+
+#: STATS_GARCH.R:424
+msgid "Submodel"
+msgstr ""
+"Submodelo"
+
+#: STATS_GARCH.R:425
+msgid "Mean External Regressors"
+msgstr ""
+"Regressores Externos de Média"
+
+#: STATS_GARCH.R:426
+msgid "Distribution"
+msgstr ""
+"Distribuição"
+
+#: STATS_GARCH.R:427
+msgid "Variance Targeting"
+msgstr ""
+"Destinação de Variância"
+
+#: STATS_GARCH.R:428
+msgid "Holdout Cases"
+msgstr ""
+"Casos de validação"
+
+#: STATS_GARCH.R:429
+msgid "Solver"
+msgstr ""
+"Resolvedor"
+
+#: STATS_GARCH.R:430
+msgid "Convergence"
+msgstr ""
+"Convergência"
+
+#: STATS_GARCH.R:431
+msgid "Log Likelihood"
+msgstr ""
+"Log da Verossimilhança"
+
+#: STATS_GARCH.R:432
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_GARCH.R:433
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_GARCH.R:434
+msgid "Shibata"
+msgstr ""
+"Shibata"
+
+#: STATS_GARCH.R:435
+msgid "Hannan-Quinn"
+msgstr ""
+"Hannan-Quinn"
+
+#: STATS_GARCH.R:436
+msgid "Forecast Dataset"
+msgstr ""
+"Conjunto de Dados de Previsão"
+
+#: STATS_GARCH.R:437
+msgid "Residual Dataset"
+msgstr ""
+"Conjunto de Dados de Resíduo"
+
+#: STATS_GARCH.R:438
+msgid "Workspace Action"
+msgstr ""
+"Ação da Área de Trabalho"
+
+#: STATS_GARCH.R:439
+msgid "Saved Workspace"
+msgstr ""
+"Área de trabalho salva"
+
+#: STATS_GARCH.R:440
+msgid "Random Number Seed"
+msgstr ""
+"Semente de Número Aleatório"
+
+#: STATS_GARCH.R:441
+msgid "Estimation Date"
+msgstr ""
+"Data de Estimação"
+
+#: STATS_GARCH.R:451
+#: STATS_GARCH.R:455
+#: STATS_GARCH.R:456
+#: STATS_GARCH.R:465
+#: STATS_GARCH.R:466
+#: STATS_GARCH.R:468
+#: STATS_GARCH.R:469
+msgid "--NA--"
+msgstr ""
+"--NA--"
+
+#: STATS_GARCH.R:459
+#: STATS_GARCH.R:462
+msgid "Yes"
+msgstr ""
+"Sim"
+
+#: STATS_GARCH.R:459
+msgid "No"
+msgstr ""
+"Não"
+
+#: STATS_GARCH.R:462
+msgid "NO"
+msgstr ""
+"NO"
+
+#: STATS_GARCH.R:475
+msgid "Values"
+msgstr ""
+"Valores"
+
+#: STATS_GARCH.R:477
+msgid "GARCH Summary"
+msgstr ""
+"Sumarização de GARCH"
+
+#: STATS_GARCH.R:479
+msgid "Results computed by R rugarch package"
+msgstr ""
+"Resultados calculados pelo pacote rugarch R"
+
+#: STATS_GARCH.R:499
+msgid "AR"
+msgstr ""
+"AR"
+
+#: STATS_GARCH.R:500
+msgid "MA"
+msgstr ""
+"MA"
+
+#: STATS_GARCH.R:501
+msgid "Mean"
+msgstr ""
+"Média"
+
+#: STATS_GARCH.R:502
+msgid "Archm"
+msgstr ""
+"Archm"
+
+#: STATS_GARCH.R:503
+msgid "Arfima"
+msgstr ""
+"Arfima"
+
+#: STATS_GARCH.R:504
+#: STATS_GARCH.R:508
+msgid "External Regressor"
+msgstr ""
+"Regressor Externo"
+
+#: STATS_GARCH.R:505
+msgid "ARCH(q)"
+msgstr ""
+"ARCH(q)"
+
+#: STATS_GARCH.R:506
+msgid "GARCH(p)"
+msgstr ""
+"GARCH(p)"
+
+#: STATS_GARCH.R:507
+msgid "Variance Intercept"
+msgstr ""
+"Intercepto de Variância"
+
+#: STATS_GARCH.R:509
+msgid "Leverage"
+msgstr ""
+"Alavancar"
+
+#: STATS_GARCH.R:513
+msgid "Parameter Definition"
+msgstr ""
+"Definição de Parâmetro"
+
+#: STATS_GARCH.R:515
+msgid "Output Notation"
+msgstr ""
+"Notação de Saída"
+
+#: STATS_GARCH.R:516
+msgid "Term"
+msgstr ""
+"Termo"
+
+#: STATS_GARCH.R:523
+msgid "Estimate"
+msgstr ""
+"Estimativa"
+
+#: STATS_GARCH.R:523
+msgid "Std. Error"
+msgstr ""
+"Erro Padrão"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:561
+msgid "t"
+msgstr ""
+"t"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:561
+msgid "Sig."
+msgstr ""
+"Sig."
+
+#: STATS_GARCH.R:524
+msgid "Robust Std. Error"
+msgstr ""
+"Erro padrão robusto"
+
+#: STATS_GARCH.R:524
+msgid "Robust t"
+msgstr ""
+"t robusto"
+
+#: STATS_GARCH.R:524
+msgid "Robust Sig."
+msgstr ""
+"Sig. Robusto"
+
+#: STATS_GARCH.R:525
+msgid "Coefficients"
+msgstr ""
+"Coeficientes"
+
+#: STATS_GARCH.R:530
+msgid "Bin Size"
+msgstr ""
+"Tamanho da categoria"
+
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:538
+#: STATS_GARCH.R:571
+msgid "Statistic"
+msgstr ""
+"Estatística"
+
+#: STATS_GARCH.R:531
+msgid "Goodness of Fit Tests"
+msgstr ""
+"Qualidade de Testes de Ajuste"
+
+#: STATS_GARCH.R:537
+msgid "Joint"
+msgstr ""
+"Conjunto"
+
+#: STATS_GARCH.R:541
+msgid "Individual Critical Values:"
+msgstr ""
+"Valores Críticos Individuais:"
+
+#: STATS_GARCH.R:543
+msgid "Joint Critical Values:"
+msgstr ""
+"Valores Críticos do Conjunto:"
+
+#: STATS_GARCH.R:546
+msgid "Hansen-Nyblom Stability Test"
+msgstr ""
+"Teste de Estabilidade Hansen-Nyblom"
+
+#: STATS_GARCH.R:555
+msgid "Sign Bias"
+msgstr ""
+"Viés de sinal"
+
+#: STATS_GARCH.R:556
+msgid "Negative Sign Bias"
+msgstr ""
+"Viés de sinal negativo"
+
+#: STATS_GARCH.R:557
+msgid "Positive Sign Bias"
+msgstr ""
+"Viés de sinal positivo"
+
+#: STATS_GARCH.R:558
+msgid "Joint Effect"
+msgstr ""
+"Efeito de conjunto"
+
+#: STATS_GARCH.R:562
+msgid "Engle-Ng Sign Bias Test"
+msgstr ""
+"Teste Bias de Sinal Engle-Ng"
+
+#: STATS_GARCH.R:572
+msgid "Long Run Unconditional Variance"
+msgstr ""
+"Variância Incondicional de Execução Longa"
+
+#: STATS_GARCH.R:573
+msgid "Unconditional Mean of Conditional Mean Equation"
+msgstr ""
+"Média Incondicional de Equação de Média Condicional"
+
+#: STATS_GARCH.R:574
+msgid "Model Persistence"
+msgstr ""
+"Persistência de Modelo"
+
+#: STATS_GARCH.R:575
+msgid "Halflife of Fit Variance"
+msgstr ""
+"Meia-Vida de Variância de Ajuste"
+
+#: STATS_GARCH.R:577
+msgid "Other Statistics"
+msgstr ""
+"Outras Estatísticas"
+
+#: STATS_GARCH.R:636
+#: STATS_GARCH.R:653
+msgid "Time"
+msgstr ""
+"Hora"
+
+#: STATS_GARCH.R:640
+msgid "Residuals"
+msgstr ""
+"Residuais"
+
+#: STATS_GARCH.R:641
+msgid "Fitted Values"
+msgstr ""
+"Valores Ajustados"
+
+#: STATS_GARCH.R:657
+msgid "Forecast, roll="
+msgstr ""
+"Previsão, rolo="
+
+#: STATS_GARCH.R:659
+msgid "Sigma, roll="
+msgstr ""
+"Sigma, rolo="
+
+#: STATS_GARCH.R:698
+msgid "End of procedure"
+msgstr ""
+"Fim do procedimento"
+
+#: STATS_GARCH.R:725
+msgid "Message Number"
+msgstr ""
+"Número da mensagem"
+
+
