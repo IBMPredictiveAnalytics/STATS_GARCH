@@ -1,0 +1,496 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+#: STATS_GARCH.R:226
+msgid "GARCH"
+msgstr ""
+"GARCH"
+
+#: STATS_GARCH.R:227
+msgid "GARCH: Warnings"
+msgstr ""
+"GARCH：警告"
+
+#: STATS_GARCH.R:232
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"需要 R %s 程序包，但未能将其装入。"
+
+#: STATS_GARCH.R:240
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"活动数据集必须具有名称才能使用此过程"
+
+#: STATS_GARCH.R:244
+msgid "The output dataset names must not already be in use"
+msgstr ""
+"输出数据集名称不得正在使用中"
+
+#: STATS_GARCH.R:249
+msgid "Forecasts were requested but no forecast dataset name was specified"
+msgstr ""
+"已请求进行预测，但未指定预测数据集名称"
+
+#: STATS_GARCH.R:252
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"已指定一个文件作为模型源，但未指定名称"
+
+#: STATS_GARCH.R:255
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"已指定模型源作为工作空间，但指定了输入模型文件"
+
+#: STATS_GARCH.R:259
+msgid "A submodel was specified fo a model that does not support submodels"
+msgstr ""
+"对不支持子模型的模型指定了子模型"
+
+#: STATS_GARCH.R:263
+msgid "Model estimation was specified, but no variable was specified"
+msgstr ""
+"指定了模型估算，但未指定任何变量"
+
+#: STATS_GARCH.R:267
+msgid "The ARMA order for the variance and mean must specify two values"
+msgstr ""
+"方差和平均值的 ARMA 阶必须指定两个值"
+
+#: STATS_GARCH.R:271
+msgid "The dataset of residuals and fitted values cannot be requested except when estimating"
+msgstr ""
+"除非在进行估算，否则不得请求使用残值与拟合值的数据集"
+
+#: STATS_GARCH.R:295
+msgid "The workspace does not contain a GARCH model"
+msgstr ""
+"工作空间未包含 GARCH 模型"
+
+#: STATS_GARCH.R:311
+msgid "The start time must have one or two values"
+msgstr ""
+"开始时间必须具有一个或两个值"
+
+#: STATS_GARCH.R:322
+msgid "Dataset too small.  At least 100 cases are required"
+msgstr ""
+"数据集过小。至少需要 100 个个案"
+
+#: STATS_GARCH.R:366
+msgid "The roll value must be less than or equal to the holdout value"
+msgstr ""
+"滚动值必须小于或等于保持值"
+
+#: STATS_GARCH.R:383
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"由于命令未估算模型，因此正在忽略工作空间保存请求"
+
+#: STATS_GARCH.R:419
+msgid "Variable"
+msgstr ""
+"变量"
+
+#: STATS_GARCH.R:420
+msgid "Model Source"
+msgstr ""
+"模型源"
+
+#: STATS_GARCH.R:421
+msgid "GARCH Model"
+msgstr ""
+"GARCH 模型"
+
+#: STATS_GARCH.R:422
+msgid "Variance External Regressors"
+msgstr ""
+"方差外部回归变量"
+
+#: STATS_GARCH.R:423
+msgid "Mean Model Arma Order"
+msgstr ""
+"平均值模型 Arma 阶"
+
+#: STATS_GARCH.R:424
+msgid "Submodel"
+msgstr ""
+"子模型"
+
+#: STATS_GARCH.R:425
+msgid "Mean External Regressors"
+msgstr ""
+"平均值外部回归变量"
+
+#: STATS_GARCH.R:426
+msgid "Distribution"
+msgstr ""
+"分布"
+
+#: STATS_GARCH.R:427
+msgid "Variance Targeting"
+msgstr ""
+"方差目标定向"
+
+#: STATS_GARCH.R:428
+msgid "Holdout Cases"
+msgstr ""
+"保持个案"
+
+#: STATS_GARCH.R:429
+msgid "Solver"
+msgstr ""
+"解析器"
+
+#: STATS_GARCH.R:430
+msgid "Convergence"
+msgstr ""
+"收敛"
+
+#: STATS_GARCH.R:431
+msgid "Log Likelihood"
+msgstr ""
+"对数似然"
+
+#: STATS_GARCH.R:432
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_GARCH.R:433
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_GARCH.R:434
+msgid "Shibata"
+msgstr ""
+"Shibata"
+
+#: STATS_GARCH.R:435
+msgid "Hannan-Quinn"
+msgstr ""
+"Hannan-Quinn"
+
+#: STATS_GARCH.R:436
+msgid "Forecast Dataset"
+msgstr ""
+"预测数据集"
+
+#: STATS_GARCH.R:437
+msgid "Residual Dataset"
+msgstr ""
+"残差数据集"
+
+#: STATS_GARCH.R:438
+msgid "Workspace Action"
+msgstr ""
+"工作空间操作"
+
+#: STATS_GARCH.R:439
+msgid "Saved Workspace"
+msgstr ""
+"保存的工作空间"
+
+#: STATS_GARCH.R:440
+msgid "Random Number Seed"
+msgstr ""
+"随机数种子"
+
+#: STATS_GARCH.R:441
+msgid "Estimation Date"
+msgstr ""
+"估算日期"
+
+#: STATS_GARCH.R:451
+#: STATS_GARCH.R:455
+#: STATS_GARCH.R:456
+#: STATS_GARCH.R:465
+#: STATS_GARCH.R:466
+#: STATS_GARCH.R:468
+#: STATS_GARCH.R:469
+msgid "--NA--"
+msgstr ""
+"--不适用--"
+
+#: STATS_GARCH.R:459
+#: STATS_GARCH.R:462
+msgid "Yes"
+msgstr ""
+"是"
+
+#: STATS_GARCH.R:459
+msgid "No"
+msgstr ""
+"否"
+
+#: STATS_GARCH.R:462
+msgid "NO"
+msgstr ""
+"否"
+
+#: STATS_GARCH.R:475
+msgid "Values"
+msgstr ""
+"值"
+
+#: STATS_GARCH.R:477
+msgid "GARCH Summary"
+msgstr ""
+"GARCH 摘要"
+
+#: STATS_GARCH.R:479
+msgid "Results computed by R rugarch package"
+msgstr ""
+"由 R rugarch 程序包计算的结果"
+
+#: STATS_GARCH.R:499
+msgid "AR"
+msgstr ""
+"AR"
+
+#: STATS_GARCH.R:500
+msgid "MA"
+msgstr ""
+"MA"
+
+#: STATS_GARCH.R:501
+msgid "Mean"
+msgstr ""
+"平均值"
+
+#: STATS_GARCH.R:502
+msgid "Archm"
+msgstr ""
+"Archm"
+
+#: STATS_GARCH.R:503
+msgid "Arfima"
+msgstr ""
+"Arfima"
+
+#: STATS_GARCH.R:504
+#: STATS_GARCH.R:508
+msgid "External Regressor"
+msgstr ""
+"外部回归变量"
+
+#: STATS_GARCH.R:505
+msgid "ARCH(q)"
+msgstr ""
+"ARCH(q)"
+
+#: STATS_GARCH.R:506
+msgid "GARCH(p)"
+msgstr ""
+"GARCH(p)"
+
+#: STATS_GARCH.R:507
+msgid "Variance Intercept"
+msgstr ""
+"方差截距"
+
+#: STATS_GARCH.R:509
+msgid "Leverage"
+msgstr ""
+"杠杆"
+
+#: STATS_GARCH.R:513
+msgid "Parameter Definition"
+msgstr ""
+"参数定义"
+
+#: STATS_GARCH.R:515
+msgid "Output Notation"
+msgstr ""
+"输出表示法"
+
+#: STATS_GARCH.R:516
+msgid "Term"
+msgstr ""
+"项"
+
+#: STATS_GARCH.R:523
+msgid "Estimate"
+msgstr ""
+"估算"
+
+#: STATS_GARCH.R:523
+msgid "Std. Error"
+msgstr ""
+"标准误差"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:561
+msgid "t"
+msgstr ""
+"t"
+
+#: STATS_GARCH.R:523
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:561
+msgid "Sig."
+msgstr ""
+"显著性"
+
+#: STATS_GARCH.R:524
+msgid "Robust Std. Error"
+msgstr ""
+"稳健标准误差"
+
+#: STATS_GARCH.R:524
+msgid "Robust t"
+msgstr ""
+"稳健 t"
+
+#: STATS_GARCH.R:524
+msgid "Robust Sig."
+msgstr ""
+"稳健显著性"
+
+#: STATS_GARCH.R:525
+msgid "Coefficients"
+msgstr ""
+"系数"
+
+#: STATS_GARCH.R:530
+msgid "Bin Size"
+msgstr ""
+"分箱大小"
+
+#: STATS_GARCH.R:530
+#: STATS_GARCH.R:538
+#: STATS_GARCH.R:571
+msgid "Statistic"
+msgstr ""
+"统计"
+
+#: STATS_GARCH.R:531
+msgid "Goodness of Fit Tests"
+msgstr ""
+"拟合优度检验"
+
+#: STATS_GARCH.R:537
+msgid "Joint"
+msgstr ""
+"联合"
+
+#: STATS_GARCH.R:541
+msgid "Individual Critical Values:"
+msgstr ""
+"单个关键值："
+
+#: STATS_GARCH.R:543
+msgid "Joint Critical Values:"
+msgstr ""
+"联合关键值："
+
+#: STATS_GARCH.R:546
+msgid "Hansen-Nyblom Stability Test"
+msgstr ""
+"Hansen-Nyblom 稳定性检验"
+
+#: STATS_GARCH.R:555
+msgid "Sign Bias"
+msgstr ""
+"符号偏误"
+
+#: STATS_GARCH.R:556
+msgid "Negative Sign Bias"
+msgstr ""
+"负符号偏误"
+
+#: STATS_GARCH.R:557
+msgid "Positive Sign Bias"
+msgstr ""
+"正符号偏误"
+
+#: STATS_GARCH.R:558
+msgid "Joint Effect"
+msgstr ""
+"联合效应"
+
+#: STATS_GARCH.R:562
+msgid "Engle-Ng Sign Bias Test"
+msgstr ""
+"Engle-Ng 符号偏误检验"
+
+#: STATS_GARCH.R:572
+msgid "Long Run Unconditional Variance"
+msgstr ""
+"长期无条件方差"
+
+#: STATS_GARCH.R:573
+msgid "Unconditional Mean of Conditional Mean Equation"
+msgstr ""
+"条件平均值方程的无条件平均值"
+
+#: STATS_GARCH.R:574
+msgid "Model Persistence"
+msgstr ""
+"模型持久性"
+
+#: STATS_GARCH.R:575
+msgid "Halflife of Fit Variance"
+msgstr ""
+"拟合半衰方差"
+
+#: STATS_GARCH.R:577
+msgid "Other Statistics"
+msgstr ""
+"其他统计"
+
+#: STATS_GARCH.R:636
+#: STATS_GARCH.R:653
+msgid "Time"
+msgstr ""
+"时间"
+
+#: STATS_GARCH.R:640
+msgid "Residuals"
+msgstr ""
+"残差"
+
+#: STATS_GARCH.R:641
+msgid "Fitted Values"
+msgstr ""
+"拟合值"
+
+#: STATS_GARCH.R:657
+msgid "Forecast, roll="
+msgstr ""
+"预测，滚动="
+
+#: STATS_GARCH.R:659
+msgid "Sigma, roll="
+msgstr ""
+"Sigma，滚动="
+
+#: STATS_GARCH.R:698
+msgid "End of procedure"
+msgstr ""
+"过程结束"
+
+#: STATS_GARCH.R:725
+msgid "Message Number"
+msgstr ""
+"消息号"
+
+
