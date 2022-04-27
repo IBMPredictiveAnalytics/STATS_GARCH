@@ -7,7 +7,7 @@ Summary: GARCH models
 Description: This procedure calculates a variety of univariate GARCH m
  odels.  The models can be used for forecasting.
 Author: JKP, IBM SPSS
-Version: 1.0.3
+Version: 1.0.4
 Product-Version: 18
 Date: 6/25/14
 Categories: time series, GARCH, statistics
