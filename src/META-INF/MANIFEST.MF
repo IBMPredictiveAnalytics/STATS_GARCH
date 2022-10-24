@@ -1,4 +1,5 @@
 Name: STATS GARCH
+Display-Name: GARCH
 Dialog-Specs: STATS_GARCH.spd
 Command-Specs: STATS_GARCH.xml
 Code-Files: STATS_GARCH.R
